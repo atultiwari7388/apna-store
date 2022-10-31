@@ -142,7 +142,84 @@ class HomeScreen extends StatelessWidget {
                                 )).toList(),
                       ),
                     ),
-
+                    20.heightBox,
+                    //feature products
+                    Container(
+                      padding: const EdgeInsets.all(12.0),
+                      width: double.maxFinite,
+                      decoration: const BoxDecoration(
+                        color: redColor,
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          featuredProducts.text.bold
+                              .color(Colors.white)
+                              .size(18)
+                              .make(),
+                          15.heightBox,
+                          SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              children: List.generate(
+                                6,
+                                (index) => Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Image.asset(
+                                      imgP1,
+                                      width: 150,
+                                      fit: BoxFit.cover,
+                                    ),
+                                    10.heightBox,
+                                    "4GB RAM /500 GB Storage"
+                                        .text
+                                        .semiBold
+                                        .color(darkFontGrey)
+                                        .make(),
+                                    10.heightBox,
+                                    "RS.1,20,000"
+                                        .text
+                                        .color(redColor)
+                                        .size(16)
+                                        .make(),
+                                  ],
+                                )
+                                    .box
+                                    .white
+                                    .margin(const EdgeInsets.symmetric(
+                                        horizontal: 4))
+                                    .roundedSM
+                                    .padding(const EdgeInsets.all(8))
+                                    .make(),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    20.heightBox,
+                    //third slider section
+                    //2nd slider section
+                    VxSwiper.builder(
+                        aspectRatio: 16 / 9,
+                        autoPlay: true,
+                        height: 150,
+                        enlargeCenterPage: true,
+                        itemCount: homeScreenBrandsSecondSlider.length,
+                        itemBuilder: (context, index) {
+                          return Image.asset(
+                            homeScreenBrandsSecondSlider[index],
+                            fit: BoxFit.cover,
+                          )
+                              .box
+                              .rounded
+                              .clip(Clip.antiAlias)
+                              .margin(const EdgeInsets.symmetric(horizontal: 8))
+                              .make();
+                        }),
+                    20.heightBox,
+                    //all product section
                     100.heightBox
                   ],
                 ),

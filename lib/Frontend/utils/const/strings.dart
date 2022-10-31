@@ -31,6 +31,7 @@ const topSellers = "Top Sellers";
 const brand = "Brand";
 const topCategories = "Top Categories";
 const featuredCategories = "Featured Categories";
+const featuredProducts = "Featured Products";
 const womenDress = "Women Dress";
 const girlsWatches = "Girls Watches";
 const mobilePhone = "Mobile Phone";
