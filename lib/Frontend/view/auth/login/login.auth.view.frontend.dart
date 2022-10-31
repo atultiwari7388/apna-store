@@ -1,5 +1,7 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
 import 'package:ecommerce_store/Frontend/utils/const/list.dart';
+import 'package:ecommerce_store/Frontend/view/auth/Signup/signup.auth.view.frontend.dart';
+import 'package:ecommerce_store/Frontend/view/bottomNavbar/main.view.frontend.dart';
 import 'package:ecommerce_store/Frontend/widgets/custom_text_field.widgets.dart';
 import 'package:get/get.dart';
 import '../../../widgets/app_logo.widgets.dart';
@@ -62,11 +64,19 @@ class _LoginAuthScreenState extends State<LoginAuthScreen> {
                     ),
                   ),
                   5.heightBox,
-                  customButton(onPress: () {}, title: login, color: redColor),
-                  5.heightBox,
+                  customButton(
+                      onPress: () => Get.to(() => const MainScreen()),
+                      title: login,
+                      color: redColor),
+                  10.heightBox,
                   createNewAccount.text.color(fontGrey).make(),
-                  5.heightBox,
-                  customButton(onPress: () {}, title: signUp, color: golden),
+                  10.heightBox,
+                  customButton(
+                      onPress: () {
+                        Get.to(() => const SignupAuthScreen());
+                      },
+                      title: signUp,
+                      color: golden),
                   10.heightBox,
                   loginWith.text.color(fontGrey).make(),
                   5.heightBox,
