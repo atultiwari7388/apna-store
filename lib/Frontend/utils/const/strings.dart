@@ -1,2 +1,12 @@
 const appName = "Apna Store";
 const appVersion = "Version 1.0.0";
+const appCredits = "@apnaStore";
+const email = "Email";
+const emailHint = "admin@admin.com";
+const password = "Password";
+const passwordHint = "******";
+const forgetPass = "Forget Password";
+const login = "Login";
+const signUp = "Sign Up";
+const createNewAccount = "Create new account";
+const loginWith = "Log in with";

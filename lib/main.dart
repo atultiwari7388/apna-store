@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:ecommerce_store/Frontend/utils/const/const.dart';
+import 'Frontend/view/splash/splassh_screen.view.frontend.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Ecommerce',
+    return GetMaterialApp(
+      title: appName,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(),
+      debugShowCheckedModeBanner: false,
+      home: const SplashScreen(),
     );
   }
 }
