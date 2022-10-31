@@ -1,4 +1,5 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
+import 'package:ecommerce_store/Frontend/view/home/components/featured_product.components.home.view.frontend.dart';
 import 'package:ecommerce_store/Frontend/widgets/custom_square_button.widgets.dart';
 
 import '../../utils/const/list.dart';
@@ -123,8 +124,23 @@ class HomeScreen extends StatelessWidget {
 
                     20.heightBox,
 
-                    Row(
-                      children: List.generate(3, (index) => Column()).toList(),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: List.generate(
+                            3,
+                            (index) => Column(
+                                  children: [
+                                    featuredBoxesProduct(
+                                        icon: featuredImagesOne[index],
+                                        title: featuredTitlesOne[index]),
+                                    10.heightBox,
+                                    featuredBoxesProduct(
+                                        icon: featuredImagesTwo[index],
+                                        title: featuredTitlesTwo[index]),
+                                  ],
+                                )).toList(),
+                      ),
                     ),
 
                     100.heightBox
