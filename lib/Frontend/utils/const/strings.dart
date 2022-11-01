@@ -59,3 +59,9 @@ const sellerPolicy = "Seller Policy";
 const returnPolicy = "Return Policy";
 const supportPolicy = "Support Policy";
 const productsYouLike = "Products you may also like";
+
+//profile
+
+const wishList = "My Wishlist";
+const orders = "My Orders";
+const messages = "Messages";

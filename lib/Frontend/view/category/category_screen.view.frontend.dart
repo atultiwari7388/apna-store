@@ -1,7 +1,6 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
 import 'package:ecommerce_store/Frontend/utils/const/list.dart';
 import 'package:ecommerce_store/Frontend/view/category/categoryDetail/category_details_screen.category.view.dart';
-import 'package:get/get.dart';
 
 class CategoriesScreen extends StatefulWidget {
   const CategoriesScreen({Key? key}) : super(key: key);

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182905097602",
+    "project_id": "apna-store-32ddb",
+    "storage_bucket": "apna-store-32ddb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182905097602:android:03c0ee290f6519a03d539b",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182905097602-3dse14vm59d0l8bp2mq3rpuhjsuv1aul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0YwbdZ-HN2jxrcFVtnfOWX01cq2d3e9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182905097602-3dse14vm59d0l8bp2mq3rpuhjsuv1aul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
