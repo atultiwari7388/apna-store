@@ -1,7 +1,5 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
 
-import 'images.dart';
-
 //social icons
 const socialIconsList = [
   icTwitterLogo,
@@ -48,4 +46,30 @@ const featuredTitlesTwo = [
   boysGlasses,
   mobilePhone,
   tShirts,
+];
+
+//category section
+
+const categoryImages = [
+  imgFc1,
+  imgFc2,
+  imgFc3,
+  imgFc4,
+  imgFc5,
+  imgFc6,
+  imgFc7,
+  imgFc8,
+  imgFc9,
+];
+
+const categoriesList = [
+  womenClothing,
+  mensClothing,
+  compAccess,
+  autoMobile,
+  kidToys,
+  sports,
+  jewelery,
+  cellPhone,
+  furniture,
 ];

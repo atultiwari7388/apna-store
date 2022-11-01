@@ -38,3 +38,15 @@ const mobilePhone = "Mobile Phone";
 const boysGlasses = "Boys Glasses";
 const tShirts = "T-shirts";
 const girlsDress = "Girls Dress's";
+
+// categories string
+
+const womenClothing = "Women's Clothing";
+const mensClothing = "Men's Clothing";
+const compAccess = "Computer & Accessories";
+const autoMobile = "Automobile";
+const kidToys = "Kid's Toys";
+const sports = "Sports";
+const jewelery = "Jewelery";
+const cellPhone = "Cellphone & Tab";
+const furniture = "Furniture";
