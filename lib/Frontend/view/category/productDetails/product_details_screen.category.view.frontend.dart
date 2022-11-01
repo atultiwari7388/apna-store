@@ -1,6 +1,5 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
 import 'package:ecommerce_store/Frontend/widgets/button_widgets.widgets.dart';
-
 import '../../../utils/const/list.dart';
 
 class ProductDetailsScreen extends StatelessWidget {
