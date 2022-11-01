@@ -25,7 +25,17 @@ class AuthController extends GetxController {
           .signInWithEmailAndPassword(
               email: emailController.text.toString(),
               password: passwordController.text.toString())
-          .then((value) {});
+          .then((value) {
+        //go to bottom
+        VxToast.show(context, msg: loggedIn);
+        Get.offAll(() => const MainScreen());
+      }).onError((error, stackTrace) {
+        logoutMethod(context);
+        if (kDebugMode) {
+          print(error.toString());
+        }
+        VxToast.show(context, msg: error.toString());
+      });
     } on FirebaseAuthException catch (e) {
       VxToast.show(context, msg: e.toString());
       if (kDebugMode) {
