@@ -1,6 +1,6 @@
-import 'package:ecommerce_store/Frontend/utils/const/const.dart';
+import 'package:ecommerce_store/app/utils/const/const.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'Frontend/view/splash/splassh_screen.view.frontend.dart';
+import 'app/view/splash/splassh_screen.view.frontend.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
