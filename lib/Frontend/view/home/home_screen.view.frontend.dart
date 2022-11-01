@@ -1,7 +1,6 @@
 import 'package:ecommerce_store/Frontend/utils/const/const.dart';
 import 'package:ecommerce_store/Frontend/view/home/components/featured_product.components.home.view.frontend.dart';
 import 'package:ecommerce_store/Frontend/widgets/custom_square_button.widgets.dart';
-
 import '../../utils/const/list.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -220,6 +219,47 @@ class HomeScreen extends StatelessWidget {
                         }),
                     20.heightBox,
                     //all product section
+                    GridView.builder(
+                        physics: const NeverScrollableScrollPhysics(),
+                        shrinkWrap: true,
+                        itemCount: 6,
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 2,
+                                mainAxisSpacing: 8,
+                                crossAxisSpacing: 8,
+                                mainAxisExtent: 300),
+                        itemBuilder: (context, index) {
+                          return Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(
+                                imgP5,
+                                width: 200,
+                                height: 200,
+                                fit: BoxFit.cover,
+                              ),
+                              const Spacer(),
+                              "4GB RAM /500 GB Storage"
+                                  .text
+                                  .semiBold
+                                  .color(darkFontGrey)
+                                  .make(),
+                              10.heightBox,
+                              "RS.1,20,000"
+                                  .text
+                                  .color(redColor)
+                                  .size(16)
+                                  .make(),
+                            ],
+                          )
+                              .box
+                              .white
+                              .margin(const EdgeInsets.symmetric(horizontal: 4))
+                              .roundedSM
+                              .padding(const EdgeInsets.all(12))
+                              .make();
+                        }),
                     100.heightBox
                   ],
                 ),

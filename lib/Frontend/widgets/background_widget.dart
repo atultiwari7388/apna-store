@@ -1,6 +1,6 @@
 import '../utils/const/const.dart';
 
-Widget backgroundWidget({Widget? child}) {
+Widget backgroundWidget({required Widget child}) {
   return Container(
     decoration: const BoxDecoration(
       image:
