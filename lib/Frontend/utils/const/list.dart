@@ -73,3 +73,13 @@ const categoriesList = [
   cellPhone,
   furniture,
 ];
+
+//product details section
+
+const productDetailsItemList = [
+  video,
+  reviews,
+  sellerPolicy,
+  returnPolicy,
+  supportPolicy
+];

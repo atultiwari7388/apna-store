@@ -50,3 +50,12 @@ const sports = "Sports";
 const jewelery = "Jewelery";
 const cellPhone = "Cellphone & Tab";
 const furniture = "Furniture";
+
+// Product details screen
+
+const video = "videos";
+const reviews = "Reviews";
+const sellerPolicy = "Seller Policy";
+const returnPolicy = "Return Policy";
+const supportPolicy = "Support Policy";
+const productsYouLike = "Products you may also like";
