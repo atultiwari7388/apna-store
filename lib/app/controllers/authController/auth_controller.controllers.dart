@@ -20,6 +20,7 @@ class AuthController extends GetxController {
 
   Future<UserCredential?> loginUser(BuildContext context) async {
     UserCredential? userCredential;
+
     try {
       await auth
           .signInWithEmailAndPassword(
@@ -92,6 +93,7 @@ class AuthController extends GetxController {
       "email": email,
       "password": password,
       "imageUrl": "",
+      "id": currentUser!.uid,
     });
   }
 
