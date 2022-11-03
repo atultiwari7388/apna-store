@@ -16,13 +16,7 @@ class LoginAuthScreen extends StatefulWidget {
 class _LoginAuthScreenState extends State<LoginAuthScreen> {
   var authController = Get.put(AuthController());
 
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    authController.emailController.dispose();
-    authController.passwordController.dispose();
-  }
+  //
 
   @override
   Widget build(BuildContext context) {

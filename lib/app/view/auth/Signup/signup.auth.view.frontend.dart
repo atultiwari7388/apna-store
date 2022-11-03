@@ -16,16 +16,6 @@ class _LoginAuthScreenState extends State<SignupAuthScreen> {
   var authController = Get.put(AuthController());
 
   @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    authController.nameController.dispose();
-    authController.emailController.dispose();
-    authController.passwordController.dispose();
-    authController.retypePasswordController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,

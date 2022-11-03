@@ -1,6 +1,6 @@
 import 'package:ecommerce_store/app/utils/const/const.dart';
 
-Widget profileDetailsComponent(
+Widget profileDetailsCard(
     {required width, required String count, required String title}) {
   return Column(
     mainAxisAlignment: MainAxisAlignment.center,

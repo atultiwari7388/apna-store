@@ -2,13 +2,16 @@ import 'package:ecommerce_store/app/controllers/authController/auth_controller.c
 import 'package:ecommerce_store/app/utils/const/const.dart';
 import 'package:ecommerce_store/app/utils/const/list.dart';
 import 'package:ecommerce_store/app/view/account/component/profile_details_component.dart';
+import 'package:ecommerce_store/app/view/account/edit_screen.account.app.dart';
 import 'package:ecommerce_store/app/view/auth/login/login.auth.view.frontend.dart';
+import '../../controllers/ProfileController/profilec_controller.controllers.app.dart';
 
 class AccountScreen extends StatelessWidget {
   const AccountScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var profileController = Get.put(ProfileController());
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
@@ -22,9 +25,13 @@ class AccountScreen extends StatelessWidget {
               children: [
                 //edit profile button
                 Align(
-                    alignment: Alignment.topRight,
-                    child: const Icon(Icons.edit, color: Colors.white)
-                        .onTap(() {})),
+                  alignment: Alignment.topRight,
+                  child: const Icon(Icons.edit, color: Colors.white).onTap(
+                    () => Get.to(
+                      () => const EditProfileScreen(),
+                    ),
+                  ),
+                ),
                 //top section
                 Row(
                   children: [
@@ -87,17 +94,17 @@ class AccountScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    profileDetailsComponent(
+                    profileDetailsCard(
                       width: context.screenWidth / 3.4,
                       count: "00",
                       title: "In your cart",
                     ),
-                    profileDetailsComponent(
+                    profileDetailsCard(
                       width: context.screenWidth / 3.4,
                       count: "32",
                       title: "In your Wishlist",
                     ),
-                    profileDetailsComponent(
+                    profileDetailsCard(
                       width: context.screenWidth / 3.4,
                       count: "125",
                       title: "your Orders",
